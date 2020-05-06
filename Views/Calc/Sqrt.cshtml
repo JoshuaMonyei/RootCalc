@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Root page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">The Root Difference Function</h1>
+</div>
+@{
+    if (ViewBag.Result != null)
+    {
+        <div>
+            <p>@ViewBag.Result</p>
+        </div>
+    }
+}
+<div>
+    <form asp-controller="Calc" asp-action="Sqrt" method="POST">
+        <input type="number" placeholder="First Number" name="firstnumber"/>
+        <input type="number" placeholder="Second Number" name="secondnumber"/>
+        <button type="submit">Submit</button>
+    </form>    
+</div>
