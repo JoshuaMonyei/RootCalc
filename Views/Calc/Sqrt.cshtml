@@ -15,8 +15,8 @@
 }
 <div>
     <form asp-controller="Calc" asp-action="Sqrt" method="POST">
-        <input type="number" placeholder="First Number" name="firstnumber"/>
-        <input type="number" placeholder="Second Number" name="secondnumber"/>
+        <input type="number" placeholder="First Number" name="firstnumber" required/>
+        <input type="number" placeholder="Second Number" name="secondnumber" required/>
         <button type="submit">Submit</button>
     </form>    
 </div>
